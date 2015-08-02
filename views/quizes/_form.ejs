@@ -1,0 +1,22 @@
+<label for="preg" class="rem">Pregunta:</label>
+<input type="text" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>"/> <p>
+
+<label for="resp" class="rem">Respuesta:</label>
+<input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>"/> <p>
+
+<label for="tema" class="rem">Tema:</label>
+<select name="quiz[tema]">
+<% for (var key in temas) { %>
+  <% if (quiz.tema == temas[key]) { %>
+    <option value="<%= temas[key] %>" selected> <%= key %></option>
+  <% } else { %>
+    <option value="<%= temas[key] %>"> <%= key %></option>
+  <% } %>
+<% } %>
+</select>
+<p>
+
+<a href="/quizes"><button type="button">Cancelar</button></a>
+
+<input type="submit" value="Salvar">
+

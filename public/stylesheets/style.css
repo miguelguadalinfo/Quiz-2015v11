@@ -21,3 +21,7 @@ img#foto           {
 	                   max-height: 200px;
 	                   max-width: 200px;
 	                   padding: 5%;}	
+					   
+					   nav span             { margin: 0px 10px 0px 0px;}
+
+#ErrorMsgs  {color: #f61; font-size: smaller}
